@@ -103,6 +103,6 @@ Optional Variables:
                          changes. The default is true. Set this to false to disable.
 */
 {
-  port: 8125
+  port: process.env["STATSD_PORT"]
 , backends: [ "./backends/console" ]
 }
